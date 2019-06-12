@@ -1,0 +1,12 @@
+u=int(input(""))
+v=int(input(""))
+w=int(input(""))
+if((u>v)&(u>w)):
+  largest=u
+  print(largest)
+elif((v>u)&(v>w)):
+  largest=v
+  print(largest)
+else:
+  largest=w
+  print(largest)
