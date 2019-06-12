@@ -1,4 +1,4 @@
-N=int(input("n"))
+N=int(input(""))
 sum=0
 while(N>0):
   sum=sum+N
