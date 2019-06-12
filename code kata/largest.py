@@ -2,11 +2,11 @@ u=int(input(""))
 v=int(input(""))
 w=int(input(""))
 if((u>v)&(u>w)):
-  largest=u
-  print(largest)
+  large=u
+  print(large)
 elif((v>u)&(v>w)):
-  largest=v
-  print(largest)
+  large=v
+  print(large)
 else:
-  largest=w
-  print(largest)
+  large=w
+  print(large)
