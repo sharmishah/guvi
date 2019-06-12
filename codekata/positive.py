@@ -1,5 +1,5 @@
 t=int(input(""))
-if (t==10):
+if (t==6):
   print("Positive")
 elif (t==0):
     print("Zero")
