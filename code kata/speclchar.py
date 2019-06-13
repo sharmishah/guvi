@@ -1,8 +1,8 @@
-H=input()
-W=0
-for Z in H:
-  if (Z.isalnum() or(Z==' ')):
-    W+=0
+J=input()
+o=0
+for X in range(len(J)):
+  if(J[X].isdigit() or J[X].isalpha() or J[X]==' '):
+    continue
   else:
-    W+=1
-    print(W)
+    o+=1
+print(o)
