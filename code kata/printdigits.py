@@ -1,3 +1,3 @@
-M=input()
-for v in M:
-  print(v,end=('  '))
+Z=input()
+for s in Z:
+  print(s,end=" ")
