@@ -1,4 +1,4 @@
-i=int(input())
-for r in range(1,i+1):
-  if(i%r==0):
+N=int(input())
+for r in range(1,N+1):
+  if(N%r==0):
     print (r,end=" ")
