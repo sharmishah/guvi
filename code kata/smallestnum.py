@@ -1,4 +1,4 @@
 I,M=map(int,input().split())
-n=list(map(int,input().split()))
-n.sort()
-print(n[M-1])
+T=list(map(int,input().split()))
+T.sort()
+print(T[M-1])
