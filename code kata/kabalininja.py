@@ -1,0 +1,5 @@
+M,N=input().split()
+M=int(M)
+N=int(N)
+D=abs(M-N)
+print(D)
