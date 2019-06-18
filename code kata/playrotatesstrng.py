@@ -1,4 +1,4 @@
-h, k = list(map(str,input().split()))
+h, k1 = list(map(str,input().split()))
 k1 = int(k1)
 for i in range(k1):
   s1 = ""
