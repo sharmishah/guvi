@@ -1,7 +1,8 @@
 import math
-pin=int(input())
-q=math.radians(pin)
-if(q>0 and q<1):
-	print(round(math.pin(q),2))
+p=int(input())
+s=math.radians(p)
+if p==90:
+    print(1)
 else:
-	print(round(math.pin(q)))
+    print(round(math.sin(s),1))
+#sin
