@@ -1,2 +1,2 @@
-m=input().split()
-print(m[0].count(m[1]))
+my=input().split()
+print(my[0].count(my[1]))
