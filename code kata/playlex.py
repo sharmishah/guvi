@@ -1,6 +1,7 @@
-2n=int(input())
-lsi=[]
-for i in range(2n):
-  lsi.append(input())
-lsi=sorted(lsi)
-print(lsi[0])
+a2=int(input())
+la=[]
+for i in range(0,a2):
+    e=input()
+    la.append(e)
+la.sort()
+print(la[0])
