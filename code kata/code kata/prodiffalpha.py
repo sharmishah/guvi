@@ -1,10 +1,11 @@
-import sys, string, math
-a13,a23,a35= input().split()
-a13,a23,a35 = int(a13), int(a23), int(a35)
-if a13 == 224 :
-    print('YES')
-    sys.exit()
-if a13 % (a23+a35) == 0 :
-    print('YES')
-else :
-    print('NO')
+ab1,ab2=input().split()
+tt=0
+if len(ab1)>len(ab2):
+  ab1,ab2=ab2,ab1
+ii=0
+while ii<len(ab1):
+  tt+=(ord(ab2[ii])-ord(ab1[ii]))
+  ii+=1
+for ii in range(ii,len(ab2)):
+  tt+=ord(ab2[ii])-ord('ab')+1
+print(tt)
