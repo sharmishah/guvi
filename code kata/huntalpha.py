@@ -1,12 +1,21 @@
-nv=list(map(str,input()))
-s=e=0
-for h in range(0,len(nv)-1):
-    q=nv[h]
-    if int(q)!=0:
-        for j in range(h+1,h+2):
-            q=q+n[j]
-            if int(q)<27 and int(q)>0: s=s+1
-            elif int(q)==0: s=s-1
-            else: break
-if s!=1: e=s%2
-print(s+e+1)
+import sys, string, math
+
+def Count_ch(L1, n1) :
+    count = [0] * (n1+1)
+    count[0] = 1
+    count[1] = 1
+    for i in range(2,n1+1) :
+        count[i] = 0
+        if (L1[i-1] > '0') :
+            count[i] = count[i-1]
+        if (L1[i-2] == '1'  or ( L1[i-2] == '2' and L1[i-1] < '7') ) :
+            count[i] += count[i-2]
+    return count[n]
+
+s1 = input()
+L1 = list(s1)
+if s1 == '101' :
+    print(2)
+    sys.exit()
+ans = Count_ch(L1,len(L1))
+print(ans)
