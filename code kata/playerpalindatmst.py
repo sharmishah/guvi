@@ -1,6 +1,6 @@
 from itertools import permutations
 ss=input()
-ls=list(permutations(s))
+ls=list(permutations(ss))
 c=0
 for i in range(len(ls)):
 	if ls[i]==ls[i][::-1]:
