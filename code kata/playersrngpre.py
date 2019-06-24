@@ -1,7 +1,7 @@
 ss=input()
-as="Vishal"
-cs="Sundar"
-if as in ss and cs in ss:
+a="Vishal"
+c="Sundar"
+if a in ss and c in ss:
 	print("yes")
 else:
 	print("no")
