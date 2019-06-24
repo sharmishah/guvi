@@ -1,8 +1,16 @@
-nkg1=int(input())
-lg=[]
-for i in range(nkg1):
-    lg.append(input())
-if all("a" in i or "i" in i or "e" in i or "o" in i or "u" in i for i in l):
+a11 =int(input())
+a22 = []
+a33 = ['a','e','i','o','u']
+k=0
+for i in range(0,a11):
+    a22.append(list(input()))
+
+    for j in a22[i]:
+        if j in a33:
+            k = k+1
+            break
+
+if k == a11:
     print("yes")
 else:
     print("no")
