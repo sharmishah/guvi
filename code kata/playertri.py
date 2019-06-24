@@ -1,5 +1,5 @@
-aa,bb,cc=map(int,input().split())
-if aa+bb<=cc or cc+bb<=aa or aa+cc<=bb:
+aaa,bbb,ccc=map(int,input().split())
+if aaa+bbb<=ccc or ccc+bbb<=aaa or aaa+ccc<=bbb:
 	print("no")
 else:
 	print("yes")
