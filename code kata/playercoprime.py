@@ -1,14 +1,14 @@
-def gcd(nn,mm):
+def gcd(nnw,mmw):
     x=[]
-    for i in range(1,max(nn,mm)):
-        if nn%i==0 and mm%i==0:
+    for i in range(1,max(nnw,mmw)):
+        if nnw%i==0 and mmw%i==0:
             x.append(i)
-    ff=len(x)
-    return ff      
+    ffw=len(x)
+    return ffw      
 a,b=map(str,input().split())
-mm=len(a)
-nn=len(b)
-if gcd(mm,nn)==1:
+mmw=len(a)
+nnw=len(b)
+if gcd(mmw,nnw)==1:
     print("yes")
 else:
     print("no")
