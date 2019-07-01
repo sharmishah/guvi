@@ -77,5 +77,4 @@ g2.addEdge(0, 3)
 g2.addEdge(3, 4) 
 print "Graph is a Tree" if g2.isTree() == True \ 
                           else "Graph is a not a Tree"
-                            
-# This code is contributed by Divyanshu Mehta       
+                                   
