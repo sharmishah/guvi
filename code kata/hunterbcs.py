@@ -1,37 +1,42 @@
 class Node:
-  def __init__(self,ata):
-    self.value=ata
-    self.right=None
-    self.left=None
+    def __init__(self,d):
+        self.ddata=d
+        self.left=None
+        self.right=None
 
-def insert(root,ata):
-  if root is None:
-    root=Node(data)
-  elif root.value > ata:
-    if root.left is None:
-      root.left=Node(ata)
+def insert(root,ins):
+    if ins.ddata>root.ddata and root.right!=None:
+        insert(root.right,ins)
+    elif ins.ddata<=root.ddata and root.left!=None:
+        insert(root.left,ins)
+    if ins.ddata>root.ddata and root.right==None:
+        root.right=ins
+        return
+    elif ins.ddata<=root.ddata and root.left==None:
+        root.left=ins
+        return
+def inorder(root):
+    if root is None:
+        return
     else:
-      insert(root.left,ata)
-  elif root.value < ata:
-    if root.right is None:
-      root.right=Node(ata)
-    else:
-      insert(root.right,ata)
-
-def LCA(root,L_val,R_val):
-  if root is None:
-    return None
-  elif L_val > root.value and R_val > root.value:
-    return(LCA(root.right,L_val,R_val))
-  elif L_val < root.value and R_val < root.value:
-    return (LCA(root.left,L_val,R_val))
-  else:
-    return root.value
+        inorder(root.left)
+        print(root.ddata,end=" ")
+        inorder(root.right)
+def lcafinder(root,nn1,nn2):
+    if root is None:
+        return None
+    if root.ddata>nn1 and root.ddata>nn2:
+        return lcafinder(root.left,nn1,nn2)
+    if root.ddata<nn1 and root.ddata<nn2:
+        return lcafinder(root.right,nn1,nn2)
+    return root.ddata
 
 nn=int(input())
-val=list(map(eval,input().split()))
-u,v=map(eval,input().split())
-R=Node(val[0])
-for i in range(1,nn):
-  insert(R,val[i])
-print(LCA(R,u,v))
+az=list(map(int,input().split()))
+l,rr1=map(int,input().split())
+rr=Node(aa[0])
+for i in  range(1,nn):
+    nnn=Node(aa[i])
+    insert(rr,nnn)
+#inorder(rr)
+print(lcafinder(rr,l,rr1))
