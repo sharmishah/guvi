@@ -1,6 +1,8 @@
-def dupli(str):
-    h=set(str)
-    return "".join(h)
-str=input()
-g=dupli(str)
-print(g)
+str=list(input())
+h=[]
+for n in str:
+    if n not in h:
+        h.append(n)
+for n in h:
+    print(n,end="")
+            
